@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Log-In</title>
+	</head>
+	<body>
+<!-- Header -->	
+	<h1><a href="index.html">Xiamen City Medical Insurance</a></h1>
+<!-- Page Links -->
+			<a href="index.html">Homepage</a>
+			<a href="Log-In.html">Log-In</a>
+			<a href="Operating Hours.html">Operating Hours</a>
+			<!-- I want users to schedule an appointment after loggin in, so we should remove the option to login via other pages
+				<a href="Appointment.html">Book an Appointment</a>-->
+			<a href="Reviews.html">Reviews</a>
+	</header>
+</div>
+<!-- Body -->
+	<h2>Login Form</h2>
+		<form action="Medical Records.html">
+			<label for="user"><b>Username:</b></label>
+			<input type="text" placeholder="Enter Username" name="user" required>
+			<label for="pass"><b>Password:</b></label>
+			<input type="password" placeholder="Enter Password" name="pass" required> 
+			<button type="submit">Login</button><label>
+			<input type="checkbox" checked="checked" name="remember"> Remember me</label>
+				<div>
+				<br>
+					<button onclick="window.location.href='Register Account.html'">Register</button>
+					&nbsp;
+					<button onclick="window.location.href='Forget Password.html'">Forgot password?</button>
+				<div>
+				<br>
+					<button onclick="window.location.href='index.html'">Cancel</button>
+				</div>
+		  </form>
+		</div>
+	</body>
+</html>
