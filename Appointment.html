@@ -17,7 +17,7 @@
 <!-- Body -->
 	<section>
 		<h2>Appointment Scheduler</h2>
-	<form>
+	<form onsubmit="alert('You have successfully scheduled an appointment with Dr.' + doctor.value +'\nYour appointment date is ' + start.value + ' from ' + time.value)">
 		<!-- Dropdown menu for selecting a doctor from a particular hospital-->
 		<label for="doctor">Select your primary caregiver:</label>
 		<select name="Doctor" id="doctor" required>
@@ -31,13 +31,47 @@
       			<option value="Smith">Dr.Smith</option>
    			</optgroup>
   		</select>
+
   			<br><br>
 
-  		<!-- -->
+  		<!--Calendar for selecting an appointment date, should add more restrictions on date selection later -->
   		<label for="star">Select an appointment date:</label>
   		<input type="date" id="start" name="Date" required>
-  		<br><br>
-  		<button type="submit" onclick="alert('You have successfully scheduled an appointment with Dr.' + doctor.value +'\nYour appointment date is ' + start.value)">Submit</button>
+
+  			<br><br>
+
+  		<label for="time">Select a time:</label>
+		<select name="Time" id="time" required>
+			<option value ="">--Select a Time--</option>
+			<option value="8:00 a.m. - 8:30 a.m.">8:00 a.m. - 8:30 a.m.</option>
+			<option value="8:30 a.m. - 9:00 a.m.">8:30 a.m. - 9:00 a.m.</option>
+			<option value="9:00 a.m. - 9:30 a.m.">9:00 a.m. - 9:30 a.m.</option>
+			<option value="9:30 a.m. - 10:00 a.m.">9:30 a.m. - 10:00 a.m.</option>
+			<option value="10:00 a.m. - 10:30 a.m.">10:00 a.m. - 10:30 a.m.</option>
+			<option value="10:30 a.m. - 11:00 a.m.">10:30 a.m. - 11:00 a.m.</option>
+			<option value="11:00 a.m. - 11:30 a.m.">11:00 a.m. - 11:30 a.m.</option>
+			<option value="11:30 a.m. - 12:00 p.m.">11:30 a.m. - 12:00 p.m.</option>
+			<option value="12:00 p.m. - 12:30 p.m.">12:00 p.m. - 12:30 p.m.</option>
+			<option value="12:30 p.m. - 1:00 p.m.">12:30 p.m. - 1:00 p.m.</option>
+			<option value="1:00 p.m. - 1:30 p.m.">1:00 p.m. - 1:30 p.m.</option>
+			<option value="1:30 p.m. - 2:00 p.m.">1:30 p.m. - 2:00 p.m.</option>
+			<option value="2:00 p.m. - 2:30 p.m.">2:00 p.m. - 2:30 p.m.</option>
+			<option value="2:30 p.m. - 3:00 p.m.">2:30 p.m. - 3:00 p.m.</option>
+			<option value="3:00 p.m. - 3:30 p.m.">3:00 p.m. - 3:30 p.m.</option>
+			<option value="3:30 p.m. - 4:00 p.m.">3:30 p.m. - 4:00 p.m.</option>
+			<option value="4:00 p.m. - 4:30 p.m.">4:00 p.m. - 4:30 p.m.</option>
+			<option value="4:30 p.m. - 5:00 p.m.">4:30 p.m. - 5:00 p.m.</option>
+			<option value="5:00 p.m. - 5:30 p.m.">5:00 p.m. - 5:30 p.m.</option>
+			<option value="5:30 p.m. - 6:00 p.m.">5:30 p.m. - 6:00 p.m.</option>
+			<option value="6:00 p.m. - 6:30 p.m.">6:00 p.m. - 6:30 p.m.</option>
+			<option value="6:30 p.m. - 7:00 p.m.">6:30 p.m. - 7:00 p.m.</option>
+			<option value="7:00 p.m. - 7:30 p.m.">7:00 p.m. - 7:30 p.m.</option>
+			<option value="7:30 p.m. - 8:00 p.m.">7:30 p.m. - 8:00 p.m.</option>
+    	</select>
+
+  			<br><br>
+
+  		<button type="submit">Submit</button>
   	</form>
 
 		</section>								
