@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<!-- Formatting -->
+<html>
+	<html lang= "en">
+	<head>
+		<meta charset="utf-8">
+		<meta name ="viewport" content="width=device width, initial-scale=1, shrink-to-fit=no">
+<!-- STYLIZATION -->
+		<link href= "css/stylization.css" type="text/css" rel="stylesheet">
+		<title>Reviews</title>	
+	</head>
+<body>
+<!-- Header -->
+<div class="header">
+  <a href="index.html" class="homepage">Xiamen City Medical Insurance</a>
+<!-- Page Links -->
+  <div class="header-link">
+			<a href="About.html">About</a>
+			<a href="Log-In.html">Log-In</a>
+			<a href="Operating Hours.html">Operating Hours</a>
+			<!-- I want users to schedule an appointment after loggin in, so we should remove the option to login via other pages
+				<a href="Appointment.html">Book an Appointment</a>-->
+			<a href="Procedures.html">Medical Services</a>
+			<a href="Reviews.html">Reviews</a>
+	</div>
+</div>
+<!-- Body -->
+<div class="body">	
+	<section>
+		<h2>Choose a Doctor</h2>
+	<form>
+		<!-- Dropdown menu for selecting a doctor from a particular hospital-->
+		<label for="doctor">Select your primary caregiver:</label>
+		<select name="Doctor" id="doctor" required>
+			<option value ="">--Select an option--</option>
+    		<optgroup label="Xiamen General Hospital">
+    	  		<option value="Carlson">Dr.Carlson</option>
+      			<option value="Johnson">Dr.Johnson</option>
+    		</optgroup>
+    		<optgroup label="Xiamen Central Hospital">
+      			<option value="Thomas">Dr.Thomas</option>
+      			<option value="Smith">Dr.Smith</option>
+   			</optgroup>
+		</select>
+			<div>
+			<br>
+				<button onclick="window.location.href='Reviews.html'">View Reviews?</button>
+				&nbsp;
+				<button onclick="window.location.href='Submit Review.html'">Submit a Review</button>
+			<div>
+			<br>
+  		</select>
+		</section>	
+	</div>								
+</body>
+</html>
