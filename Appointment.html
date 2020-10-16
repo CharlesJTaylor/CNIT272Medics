@@ -1,20 +1,30 @@
 <!DOCTYPE HTML>
 <html>
+<!-- Formatting -->
+<html>
+	<html lang= "en">
 	<head>
+		<meta charset="utf-8">
+		<meta name ="viewport" content="width=device width, initial-scale=1, shrink-to-fit=no">
+<!-- STYLIZATION -->
+		<link href= "css/stylization.css" type="text/css" rel="stylesheet">
 		<title>Schedule an appointment.</title>	
 	</head>
 <body>
-<!-- Header -->	
-	<h1><a href="index.html">Xiamen City Medical Insurance</a></h1>
+<!-- Header -->
+<div class="header">
+  <a href="index.html" class="homepage">Xiamen City Medical Insurance</a>
 <!-- Page Links -->
-			<a href="index.html">Homepage</a>
+  <div class="header-link">
+			<a href="About.html">About</a>
 			<a href="Log-In.html">Log-In</a>
 			<a href="Operating Hours.html">Operating Hours</a>
 			<a href="Appointment.html">Schedule an Appointment</a>
 			<a href="Reviews.html">Reviews</a>
-	</header>
+	</div>
 </div>
 <!-- Body -->
+<div class="body">
 	<section>
 		<h2>Appointment Scheduler</h2>
 	<form onsubmit="alert('You have successfully scheduled an appointment with Dr.' + doctor.value +'\nYour appointment date is ' + start.value + ' from ' + time.value)">
@@ -74,6 +84,7 @@
   		<button type="submit">Submit</button>
   	</form>
 
-		</section>								
-	</body>
+		</section>	
+	</div>								
+</body>
 </html>
