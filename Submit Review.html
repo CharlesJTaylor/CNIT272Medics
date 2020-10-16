@@ -1,23 +1,45 @@
 <!DOCTYPE HTML>
+<!-- Formatting -->
 <html>
+	<html lang= "en">
 	<head>
-		<title>Submit a Review</title>
+		<meta charset="utf-8">
+		<meta name ="viewport" content="width=device width, initial-scale=1, shrink-to-fit=no">
+<!-- STYLIZATION -->
+		<link href= "css/stylization.css" type="text/css" rel="stylesheet">
+		<title>Submit a Review</title>	
 	</head>
-	<body>
-<!-- Header -->	
-	<h1><a href="index.html">Xiamen City Medical Insurance</a></h1>
+<body>
+<!-- Header -->
+<div class="header">
+  <a href="index.html" class="homepage">Xiamen City Medical Insurance</a>
 <!-- Page Links -->
-			<a href="index.html">Homepage</a>
+  <div class="header-link">
+			<a href="About.html">About</a>
 			<a href="Log-In.html">Log-In</a>
 			<a href="Operating Hours.html">Operating Hours</a>
 			<!-- I want users to schedule an appointment after loggin in, so we should remove the option to login via other pages
 				<a href="Appointment.html">Book an Appointment</a>-->
+			<a href="Procedures.html">Medical Services</a>
 			<a href="Reviews.html">Reviews</a>
-	</header>
+	</div>
 </div>
 <!-- Body -->
+<div class="body">
 	<section>
-	
-		</section>								
-	</body>
+		<form action="index.html" method="post" accept-charset="utf-8">
+				<fieldset><legend>Review This Product</legend>	
+					<p><label for="rating">Rating</label>
+					<input type="radio" name="rating" value="5" /> 5 
+					<input type="radio" name="rating" value="4" /> 4
+					<input type="radio" name="rating" value="3" /> 3 
+					<input type="radio" name="rating" value="2" /> 2 
+					<input type="radio" name="rating" value="1" /> 1</p>
+					<textarea name="review" placeholder="Type your Review" rows="8" cols="40" required></textarea></p>
+					<button type="submit">Submit Review</button><label>
+				</fieldset>
+			</form>
+		</section>	
+	</div>								
+</body>
 </html>
